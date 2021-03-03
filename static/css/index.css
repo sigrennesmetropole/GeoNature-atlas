@@ -98,6 +98,24 @@ h3.title-spaced {
   margin-top: 0px !important;
 }
 
+
+/* Bandeau de logos (slider slick) en page accueil */
+
+.slidepartenaireindex {
+  width: 280px;
+}
+
+.slidepartenaireindex img {
+  max-height : 80px;
+  margin: auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #1e1b0c;
+}
+
+
 /*Stat block*/
 
 .stat-panel {
@@ -165,7 +183,7 @@ h3.title-spaced {
   border: 1px solid #ddd;
   margin-bottom: 10px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .thumbnail-caption-medias {
