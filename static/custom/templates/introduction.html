@@ -1,0 +1,40 @@
+ <div class="col-sm-12">
+                                <div class="panel panel-default">
+                                        <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 textIntroduction">
+                                                        <h1>
+                                                                Bienvenue sur {{configuration.NOM_APPLICATION}}, l'Atlas de la Biodiversité Communale de Rennes
+                                                        </h1>
+                                                        <p>
+                                                                La Ville de Rennes et ses partenaires membres du Conseil Local de la Biodiversité vous invitent à découvrir l'ensemble des espèces faunistiques et floristiques observées sur notre territoire au fils des années. À travers ce portail, leur répartition, leur description et des photos sont mises à votre disposition pour mieux les connaître et en apprendre un peu plus sur cette biodiversité qui vous entoure. 
+                                                        </p>
+                                                        <p>
+                                                                Cet atlas ne représente pas un inventaire exhaustif des espèces présentes sur notre territoire mais reflète l'état actuel des connaissances sur la biodiversité s'inscrivant dans une démarche de partage et d'enrichissement. 
+                                                        </p>
+                                                       
+                                                        <div style="overflow:auto; padding-top:2px; padding-bottom:2px;border: 3px solid #A0A0A0"> 															
+<div style = "vertical-align: top; float: left;width: 80%;padding-right: 10px">
+																<h4 style=" text-align: center;">
+																<a href="http://enquete.biodivrennes.fr"><img src="{{url_for('static', filename='custom/images/loupe.png') }}" width="20px" alt="{{configuration.NOM_APPLICATION}}"></a>
+                                                                Devenez enquêteur de la biodiversité !
+																</h4>
+																<p>
+                                                                Aidez-nous à enrichir les connaissances sur la biodiversité en participants aux différentes enquêtes de Biodiv'Rennes. Faite nous part de de vos observations ! 
+																</p>
+																<p>
+																En ce moment le hérisson pointe le bout de son nez...
+																</p>
+																<a href="http://enquete.biodivrennes.fr"  style=" text-align: center;">participez à l'enquête !</a>
+																</div>
+																<div style = "vertical-align: top; float: right;width: 20%;">
+																<img src="{{url_for('static', filename='custom/images/missionHerisson.png') }}" width="100%" alt="{{configuration.NOM_APPLICATION}}">
+																</div>
+														</div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                        <img src="{{url_for('static', filename='custom/images/Accueil_reduit.jpg') }}" width="100%" alt="{{configuration.NOM_APPLICATION}}">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
