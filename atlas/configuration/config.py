@@ -116,6 +116,8 @@ REMOTE_MEDIAS_PATH = "static/medias/"
 
 # URL de TaxHub (pour génération à la volée des vignettes des images).
 # Si le service Taxhub n'est pas utilisé, commenter la variable
-REDIMENSIONNEMENT_IMAGE = True
+REDIMENSIONNEMENT_IMAGE = False
 # si redimmentionnement image = True, indiquer l'URL de taxhub
 TAXHUB_URL = "http://abc-biodivrennes.fr/taxhub"
+
+STAT = {"DISPLAY_CLASSE_ALTITUDE": False, "DISPLAY_OBS_MENSUELLE": True}
