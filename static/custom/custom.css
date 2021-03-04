@@ -1,5 +1,25 @@
 /* Insert your custom override CSS in this file */
- 
+
+@font-face {
+  font-family: "Intro-regular";
+  src: url("/fonts/Intro Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Intro-black";
+  src: url("/fonts/Intro Black Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Intro-bold";
+  src: url("/fonts/Intro Bold Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Intro-cond";
+  src: url("/fonts/Intro Cond.otf") format("otf");
+}
+
 :root {
 
   --main-color: #003333;
@@ -8,6 +28,7 @@
 
 body {
   background-color: #003333;
+  font-family: Intro-regular, serif;
 }
 
 .btn.btn-default {
@@ -19,11 +40,23 @@ body {
   background: #003333 !important;
 }
 
-/* Titre de l'app */
+/*Bulles de recherche*/
+#searchCommunes{
+  border-radius: 12px;
+  background-color: transparent;
+}
 
+#searchTaxons{
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+/* Titre de l'app */
 .titreAppli{
   color: #ffffff !important;
   font-size: 50px;
+  font-weight: bold;
+  font-family: Intro-black;
 }
 
 /* Bare de navigation */
@@ -46,6 +79,12 @@ body {
 
 .panel-heading {
   background-color: #ffffff !important;
+}
+
+/* Titres des blocs rectangulaire*/
+.title-spaced {
+  font-family: Intro-black;
+  font-weight: bold;
 }
 
 /* Les icones statistiques*/

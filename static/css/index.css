@@ -105,6 +105,10 @@ h3.title-spaced {
   width: 280px;
 }
 
+.slidepartenaireindex-long {
+  width: 550px !important;
+}
+
 .slidepartenaireindex img {
   max-height : 80px;
   margin: auto;
