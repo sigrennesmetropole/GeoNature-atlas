@@ -1,0 +1,197 @@
+<!-- Réalisée à partir de https://startbootstrap.com/template-overviews/one-page-wonder/ et http://getbootstrap.com/examples/carousel/ -->
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8" />
+       <title>Les partenaires de {{configuration.NOM_APPLICATION}} - {{configuration.STRUCTURE}}</title>
+
+        <!-- Jquery -->
+        <script type=text/javascript src="{{url_for('static', filename='lib/jquery-1.12.4.min.js') }}"></script>
+		<script type=text/javascript src="{{url_for('static', filename='lib/jquery-ui.min.js') }}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='lib/jquery-ui.css') }}" />
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}"></link>
+        <script type=text/javascript src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js') }}"></script>
+
+        <!-- Atlas -->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='custom/images/favicon.ico') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/atlas.css') }}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/static_pages.css') }}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='custom/custom.css') }}" />
+
+   </head>
+   <body  data-spy="scroll" data-target="#sommaire">
+    {% include 'templates/navbar.html' %}
+
+		<div id="sideBar">
+			{% include 'templates/sideBar.html' %}
+		</div>
+		<div class="container-fluid" id="page">
+
+
+            <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -15px; margin-bottom: 0px;">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background-image: url(/static/custom/images/concours_prairies_fleuries.jpg) ; background-size: cover; background-position: center center;">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Partenaires de Biodiv'Rennes</h1>
+                      <p>Découvrez tous les partenaires de l'Atlas Biodiv'Rennes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.carousel -->
+
+            <div class="container presentation">
+				
+				 <!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/AUDIAR.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">AUDIAR Rennes</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->
+       
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/BV.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">Bretaggne Vivante</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->
+
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/GMB.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">Groupe Mammalogique Breton</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->				 
+
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/GRETIA.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">GRETIA (GRoupe d'Etude des Invertébrés Armoricains</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->				 
+
+				 
+				 				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/LETG_CNRS.PNG">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">LETG / CNRS</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->	
+
+				 <!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/LPO.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">LPO - Ligue de Protection des Oiseaux</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->	
+				 
+			</div>
+        </div>
+
+		{% if configuration.AFFICHAGE_FOOTER %}
+			{% include 'static/custom/templates/footer.html' %}
+		{% endif %}
+
+        <script type="text/javascript">
+        var configuration = {{configuration|tojson}};
+        </script>
+
+        <script src="{{url_for('static', filename='main.js') }}"></script>
+
+   </body>
+</html>

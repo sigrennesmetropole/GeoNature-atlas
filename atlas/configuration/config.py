@@ -15,7 +15,7 @@ database_connection = "postgresql://geonatatlas:h6nHUh_7!P7M@localhost:63333/geo
 STRUCTURE = "Nom de la structure"
 
 # Nom de l'application
-NOM_APPLICATION = "Nom de l application"
+NOM_APPLICATION = "Biodiv'Rennes"
 
 # URL de l'application depuis la racine du domaine
 # ex "/atlas" pour une URL: http://mon-domaine/atlas OU "" si l'application est accessible à la racine du domaine
@@ -47,6 +47,14 @@ MAP = {
 
 }
 
+# Permet de lister les pages statiques souhaitées et de les afficher dynamiquement dans le menu sidebar
+# Les pictos se limitent au Glyphicon proposés par Bootstrap (https://getbootstrap.com/docs/3.3/components/)
+
+STATIC_PAGES = {
+    'presentation': {'title': "Présentation de l'atlas", 'picto': 'glyphicon-question-sign', 'order': 0, 'template': 'static/custom/templates/presentation.html'},
+    'partenaires': {'title': "Nos partenaires", 'picto': 'glyphicon-link', 'order': 1, 'template': 'static/custom/templates/partenaires.html'},
+    'enquètes': {'title': "Enquètes Biodiv'Rennes", 'picto': 'glyphicon-search', 'order': 2, 'template': 'static/custom/templates/partenaires.html'}
+}
 
 # Affichage des observations par maille ou point
 # True = maille / False = point
@@ -83,7 +91,6 @@ RANG_STAT_FR = ['Faune vertébrée', 'Faune vertébrée']
 #RANG_STAT_FR = ['Faune invertébrée', 'Faune vertébrée', 'Flore']
 
 AFFICHAGE_RANG_STAT = True
-COLONNES_RANG_STAT = 2
 
 ############################
 ####### FICHE ESPECE #######
