@@ -92,6 +92,9 @@ RANG_STAT_FR = ['Faune vertébrée', 'Faune vertébrée']
 
 AFFICHAGE_RANG_STAT = True
 
+# Bloc avec espèces à voir en ce moment. Affichage True/False
+AFFICHAGE_EN_CE_MOMENT = True
+
 ############################
 ####### FICHE ESPECE #######
 ############################
@@ -113,6 +116,6 @@ REMOTE_MEDIAS_PATH = "static/medias/"
 
 # URL de TaxHub (pour génération à la volée des vignettes des images).
 # Si le service Taxhub n'est pas utilisé, commenter la variable
-REDIMENSIONNEMENT_IMAGE = False
+REDIMENSIONNEMENT_IMAGE = True
 # si redimmentionnement image = True, indiquer l'URL de taxhub
 TAXHUB_URL = "http://abc-biodivrennes.fr/taxhub"

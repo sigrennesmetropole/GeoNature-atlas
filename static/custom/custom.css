@@ -1,0 +1,74 @@
+/* Insert your custom override CSS in this file */
+ 
+:root {
+
+  --main-color: #003333;
+  --second-color: #17AA00;
+}
+
+body {
+  background-color: #003333;
+}
+
+.btn.btn-default {
+  border-radius: 20px;
+}
+
+/* La barre du header*/
+.navbar{
+  background: #003333 !important;
+}
+
+/* Titre de l'app */
+
+.titreAppli{
+  color: #ffffff !important;
+  font-size: 50px;
+}
+
+/* Bare de navigation */
+.sidebar-nav {
+  background-color: #ffffff !important;
+}
+
+#sideBar {
+  background-color: #003333 !important;
+}
+
+.glyphicon {
+  color: black !important;
+}
+
+/* Les blocs rectangulaire*/
+.panel-default{
+  background-color: #ffffff;
+}
+
+.panel-heading {
+  background-color: #ffffff !important;
+}
+
+/* Les icones statistiques*/
+.stat-object{
+  color: #003333;
+}
+
+/* Les nombres statistiques "En quelques chiffres" "Espèces à découvrir" */
+.stat-number{
+  color: #17AA00;
+}
+
+/*  "Espèces à découvrir" */
+.statEspece {
+  font-size: 30px;
+}
+
+.higlight {
+  font-size: 30px;
+}
+
+/**/
+
+.container-presentation {
+  background-color: #ffffff !important;
+}
