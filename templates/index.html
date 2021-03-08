@@ -152,7 +152,7 @@
 										</div>
 									    <div class="thumbnail-caption-medias" >
 									        <p> {% if customStatMedias[i][j].nom_vern != None %} <b>  {{customStatMedias[i][j].nom_vern}}</b> {% endif %} <br/><i>{{customStatMedias[i][j].lb_nom}}</i></p>
-									        <p><a href="{{url_for('main.ficheEspece',cd_ref=customStatMedias[i][j].cd_ref)}}" class="btn btn-default" role="button">Fiche espèce</a></p>
+									        <p><a href="{{url_for('main.ficheEspece',cd_ref=customStatMedias[i][j].cd_ref)}}" class="btn btn-default btn-espece" role="button">Fiche espèce</a></p>
 									    </div>
 									</div>
 								</div>
@@ -194,11 +194,8 @@
 											{% if obs.pathImg == None %}
 											<img class="singleTaxon" width="80%" src="{{url_for('static', filename='images/picto_' + obs.group2_inpn | replace(" ", "_") +'.png')}}" data-toggle="tooltip" data-original-title="{{obs.group2_inpn}}" data-placement="left">
 											{% else %}
-												{% if configuration.REDIMENSIONNEMENT_IMAGE %}
 													{% set img_path = configuration.TAXHUB_URL+'/api/tmedias/thumbnail/'+obs.id_media|string+'?h=500&w=500' %}
-												{% else %}
-													{% set img_path = obs.pathImg %}
-												{% endif %}
+
 												<div class ="pictoImg pictoImgSmall lazy" data-src="{{img_path}}" ></div>
 											{% endif %}
 										</td>
