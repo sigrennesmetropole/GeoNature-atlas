@@ -18,6 +18,7 @@
 
 	  <!-- Collect the nav links, forms, and other content for toggling -->
 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<a class="navbar-brand titreAppli" href="{{url_for('main.index') }}">{{configuration.NOM_APPLICATION}}</a>
 		  <form method="POST" action="" id='searchFormTaxons' class="navbar-form navbar-left" role="search">
 				<div class="form-group has-feedback">
 					   <input id="searchTaxons" type="text" class="form-control ajax-search" placeholder="Rechercher une espèce" loading="false" />
@@ -25,13 +26,13 @@
 				<input id="hiddenInputTaxons" type="hidden" name="cd_ref" />
           </form>
 
-          <form method="POST" onsubmit="completeAction('#searchFormCommunes', hiddenInputCommunes)" id='searchFormCommunes' action=""  class="navbar-form navbar-left" role="search">
+          <!--<form method="POST" onsubmit="completeAction('#searchFormCommunes', hiddenInputCommunes)" id='searchFormCommunes' action=""  class="navbar-form navbar-left" role="search">
 				<div class="form-group has-feedback">
 					<input id="searchCommunes" type="text" class="form-control ajax-search" placeholder="Rechercher une commune" >
 				</div>
 			  <input id="hiddenInputCommunes" type="hidden" name="insee">
-          </form>
-          <a class="navbar-brand titreAppli" href="{{url_for('main.index') }}">{{configuration.NOM_APPLICATION}}</a>
+          </form>-->
+          
 	  </div>
 
   </div>
