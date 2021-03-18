@@ -88,13 +88,15 @@
 										<i class="fas fa-map-signs font-icon blue"></i>
 										<h1 class="large muted stat-number">{{stat.town | pretty}}</h1>
 										<h4 class="text-muted"> {{ 'communes' if stat.town > 1 else 'commune' }}</h4>
-										<form method="POST" onsubmit="completeAction('#searchFormCommunesStat', hiddenInputCommunesStat)" id='searchFormCommunesStat' action=""  class="navbar-form" role="search">
+										<!--<form method="POST" onsubmit="completeAction('#searchFormCommunesStat', hiddenInputCommunesStat)" id='searchFormCommunesStat' action=""  class="navbar-form" role="search">
 											<div class="form-group has-feedback">
 												<input id="searchCommunesStat" type="text" class="form-control" placeholder="Rechercher une commune" />
 												<i class="glyphicon glyphicon-search form-control-feedback"></i>
 												<input id="hiddenInputCommunesStat" type="hidden" name="insee">
 											</div>
-										</form>
+										</form>-->
+										<p><a id="localScroll" href="/atlas/commune/35238" class="btn btn-default" role="button">Voir la fiche</a></p>
+									
 									</div>
 								</div>
 								<div class ="col-lg-3 col-md-3 col-sm-6 col-xs-12 stat-object">
