@@ -3,7 +3,7 @@
 <html>
    <head>
         <meta charset="utf-8" />
-        <title>Présentation de l'atlas | {{configuration.NOM_APPLICATION}} - {{configuration.STRUCTURE}}</title>
+       <title>Les partenaires de {{configuration.NOM_APPLICATION}} - {{configuration.STRUCTURE}}</title>
 
         <!-- Jquery -->
         <script type=text/javascript src="{{url_for('static', filename='lib/jquery-1.12.4.min.js') }}"></script>
@@ -33,161 +33,154 @@
             <!-- Carousel
             ================================================== -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -15px; margin-bottom: 0px;">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-				
-              </ol>
               <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-image: url({{url_for('static', filename='custom/images/presentation_thabor_titre.jpg') }}) ; background-size: cover; background-position: center center;">
+                <div class="item active" style="background-image: url(/static/custom/images/concours_prairies_fleuries.jpg) ; background-size: cover; background-position: center center;">
                   <div class="container">
                     <div class="carousel-caption">
-						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;height:80%;">
-						  <h1>RENNES, la biodiversité</h1>
-						  <p>s'invite en ville</p>
-					  </div>
-					  <p><a class="btn btn-lg btn-default" href="#faune" role="button">En savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Thabor_titre.jpg') }}) ; background-size: cover; background-position: center center;">
-                  <div class="container">
-                    <div class="carousel-caption">
-						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
-						   <h1>Mieux connaître</h1>
-						  <p>pour mieux protéger</p>
-						</div>
-                      <p><a class="btn btn-lg btn-default" href="#connaitre" role="button">En savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/presentation_stmartin_titre.jpg') }}) ; background-size: cover; background-position: top center;">
-                  <div class="container">
-                    <div class="carousel-caption">
-						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
-							<h1>Devenez enquêteur de la biodiversité !</h1>
-						</div>
-                     <p><a class="btn btn-lg btn-default" href="#enquetes" role="button">En savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-                 <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Photo_reduit.jpg') }}) ; background-size: cover; background-position: bottom center;">
-                  <div class="container">
-                    <div class="carousel-caption">
-						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
-							<h1>Quelle biodiversité </h1>
-							<p>près de chez vous ?</p>
-						</div>
-                      <p><a class="btn btn-lg btn-default" href="#biodiversite" role="button">En savoir plus</a></p>
+                      <h1>Partenaires de Biodiv'Rennes</h1>
+                      <p>Découvrez tous les partenaires de l'Atlas Biodiv'Rennes</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Précédent</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Suivant</span>
-              </a>
             </div><!-- /.carousel -->
 
+            <div class="container presentation">
+				
+				 <!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/AUDIAR.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">AUDIAR Rennes</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
 
-            <div class="container presentation" style="background-color : white;">
-
-                        <!-- START THE FEATURETTES -->
-
-              <hr class="featurette-divider">
-				<div class="featurette" id="rennes">
-                    <img class="featurette-image img-circle img-responsive pull-right" style="border-radius: unset;" src="{{url_for('static', filename='custom/images/presentation_thabor.jpg') }}">
-                    <h2 class="featurette-heading">RENNES, LA BIODIVERSITÉ<br/><span class="text-muted">S'INVITE EN VILLE</span>
-                    </h2>
-                  <p class="lead">
-                    Rennes possède sur son territoire des milieux naturels très riches et diversifiés. Parmi eux, le secteur de la Vilaine, qualifié de zones naturelles d'intérêt faunistique et floristique (ZNIEFF) où l'on retrouve de nombreuses espèces remarquables faisant de ce site le plus riche en matière de biodiversité.  
-                  </p>
-                  <p class="lead">
-                     Des milieux naturels d'intérêt écologique (MNIE) sont identifiés dans le secteur nord-est de la ville au niveau du parc des Gayeulles et des secteurs agro-naturels en continuités jusque la forêt de Rennes. 
-                  </p>
-                   <p class="lead">
-                    Mais la biodiversité s'invite également jusqu'au centre-ville comme cette poule d'eau au niveau des jardins flottants! Comment ? Au travers de la Vilaine, du canal d'Ille-et-Rance,  des espaces verts urbains, mais également au travers des jardins privés, vos jardins! 
-                  </p>
-                  
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
                 </div>
-				
-				<hr class="featurette-divider">
-				<div class="featurette" id="connaitre">
-                    <img class="featurette-image img-circle img-responsive pull-left"  style="border-radius: unset;" src="{{url_for('static', filename='custom/images/Thabor.jpg') }}">
-                    <h2 class="featurette-heading">MIEUX CONNAÎTRE POUR<br/><span class="text-muted">MIEUX PROTÉGER.</span>
-                    </h2>
-                  <p class="lead">
-                    Ce projet d'Atlas de la Biodiversité Communale est né du Conseil Local de la Biodiversité et s'intègre dans la Plan d'Action Biodiversité de la Ville de Rennes. 
-                  </p>
-                  <p class="lead">
-                    Il a pour double objectif de mieux connaitre la biodiversité de notre territoire rassemblant l’ensemble des données d'observations sur la faune et la flore et de les partager avec le plus grand nombre.
-                  </p>
-                   <p class="lead">
-                    Cette base d’information sur les animaux et les plantes qui nous entourent est utilisée pour améliorer la prise en compte de la biodiversité dans l'aménagement et la gestion du territoire mais également pour suivre son évolution dans le temps.
-                  </p>
-                  
+				 <!-- FIN  partenaire -->
+       
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/BV.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">Bretaggne Vivante</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
                 </div>
-				
-				              <hr class="featurette-divider">
+				 <!-- FIN  partenaire -->
 
-              <div class="featurette" id="enquetes">
-                  <img class="featurette-image img-circle img-responsive pull-left"  style="border-radius: unset;" src="{{url_for('static', filename='custom/images/presentation_stmartin.jpg') }}">
-                  <h2 class="featurette-heading">PARTICIPEZ À L'AMÉLIORATION<br/><span class="text-muted">DES CONNAISSANCES !</span>
-                  </h2>
-                  <p class="lead">
-                    Devenez enquêteur de la biodiversité en participant aux différentes enquêtes de Biodiv'Rennes! Cette plateforme vous permet de renseigner et vos observations sur les espèces recherchées du moment. N'hésitez pas à y participer !
-                  </p>
-                  <p class="lead">
-                    <a href="N'hésitez pas à y participer !" target="_blank">http://www.enquetes-biodivrennes.fr</a>.
-                  </p>
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/GMB.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">Groupe Mammalogique Breton</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
 
-              </div>
-				
-			  <hr class="featurette-divider">
-				<div class="featurette" id="biodiversite">
-					<h2 id="general"> </h2>
-					<h2 class="featurette-heading">QUELLE BIODIVERSITÉ<br/><span class="text-muted">PRÊT DE CHEZ VOUS ?</span>
-					</h2>
-					<p class="lead">
-						Biodiv'Rennes vous permet d'accéder à de nombreuses fiches espèces dans lesquelles vous retrouverez bon nombre d'informations comme leur répartition géographique connue ou encore des photos et descriptions pour mieux les connaitre (et les reconnaitre !)  
-					  </p>
-					<div class="col-lg-4" id="fonctionnalites">
-					  <img class="img-circle" src="{{url_for('static', filename='custom/images/mesangeCharb.jpg') }}" alt="Generic placeholder image" width="140" height="140">
-					  <h2>Fiches espèces</h2>
-					  <p>Retrouvez la fiche de chaque espèce avec leur carte des observations, leur répartition altitudinale et mensuelle, ainsi que des descriptions, photos, vidéos, audios et liens complémentaires</p>
-					  <p><a class="btn btn-default" href="/atlas/espece/61098" role="button">Exemple &raquo;</a></p>
-					</div><!-- /.col-lg-4 -->
-					
-					<div class="col-lg-4">
-					  <img class="img-circle" src="{{url_for('static', filename='custom/images/machaon.jpg') }}" alt="Generic placeholder image" width="140" height="140">
-					  <h2>Galerie photos</h2>
-					  <p>Découvrez les photographies des différentes espèces, réalisées principalement par les agents du Parc national lors de leurs missions sur le terrain.</p>
-					  <p><a class="btn btn-default" href="{{url_for('main.photos')}}" role="button">Parcourir &raquo;</a></p>
-					</div><!-- /.col-lg-4 -->
-					
-					<div class="col-lg-4">
-					  <img class="img-circle" src="{{url_for('static', filename='custom/images/machaon.jpg') }}" alt="Generic placeholder image" width="140" height="140">
-					  <h2>Fiches communes</h2>
-					  <p>Découvrez toutes les informations synthétisées sur la commune.</p>
-					  <p><a class="btn btn-default" href="/atlas/commune/35238" role="button">Exemple &raquo;</a></p>
-					</div><!-- /.col-lg-4 -->
-				</div>
-                
-                
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->				 
 
+				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/GRETIA.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">GRETIA (GRoupe d'Etude des Invertébrés Armoricains</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
 
-              <!-- /END THE FEATURETTES -->
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->				 
 
-            </div>
+				 
+				 				<!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/LETG_CNRS.PNG">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">LETG / CNRS</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
 
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->	
 
+				 <!-- Partenaire -->
+				<div class="col-lg-12" style="background:#fff; border-radius: 15px; margin-top:20px; padding: 20px; text-align:left;">
+                  <span id="cenpdl" style="position:absolute; top:-150px;"></span>
+                  <div class="row">
+                      <div class="col-xs-4">                  
+                        <img class="img-responsive pull-left" style="margin:auto;" src="/atlas/static/custom/images/LPO.jpg">
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 class="partenaires-heading">LPO - Ligue de Protection des Oiseaux</h3>
+                        <p>Contact : </p>
+                        <p>Mail : </p>
+                        <p>Tél. : </p>
+                        <p>Coordonnées :</p>
+                        <p>Taxons : Faune & Flore</p>
+                        <p>Territoire : </p>
+
+                        <p>Site web : <a href="http://cenpaysdelaloire.fr/" target="_bank">cenpaysdelaloire.fr</a></p>
+                      </div>
+                  </div>
+                </div>
+				 <!-- FIN  partenaire -->	
+				 
+			</div>
         </div>
 
 		{% if configuration.AFFICHAGE_FOOTER %}
