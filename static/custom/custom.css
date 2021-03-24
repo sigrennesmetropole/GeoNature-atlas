@@ -66,6 +66,7 @@ body {
 
 #sideBar {
   background-color: #003333 !important;
+  margin-top: 25px;
 }
 
 .glyphicon {
@@ -94,7 +95,7 @@ body {
 
 /* Les nombres statistiques "En quelques chiffres" "Espèces à découvrir" */
 .stat-number{
-  color: #CCFF4D;
+  color: #9b9e24;
 }
 
 /*  "Espèces à découvrir" */
@@ -107,7 +108,7 @@ body {
 }
 
 .btn.btn-default.btn-espece{
-  background-color: #CCFF4D !important;
+  background-color: #9b9e24 !important;
   color: black ;
   border: none;
 }
