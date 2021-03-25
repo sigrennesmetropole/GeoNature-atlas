@@ -1,23 +1,38 @@
 /* Insert your custom override CSS in this file */
 
 @font-face {
-  font-family: "Intro-regular";
-  src: url("/fonts/Intro Regular.otf") format("otf");
+  font-family: "IntroBold";
+  src: url("../css/fonts/Fontfabric-IntroBold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Intro-black";
-  src: url("/fonts/Intro Black Regular.otf") format("otf");
+  font-family: "IntroBoldAlt";
+  src: url("../css/fonts/Fontfabric-IntroBoldAlt.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Intro-bold";
-  src: url("/fonts/Intro Bold Regular.otf") format("otf");
+  font-family: "IntroBoldCaps";
+  src: url("../css/fonts/Fontfabric-IntroBoldCaps.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Intro-cond";
-  src: url("/fonts/Intro Cond.otf") format("otf");
+  font-family: "IntroSemiBold";
+  src: url("../css/fonts/Fontfabric-IntroSemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IntroSemiBoldAlt";
+  src: url("../css/fonts/Fontfabric-IntroSemiBoldAlt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IntroSemiBoldCaps";
+  src: url("../css/fonts/Fontfabric-IntroSemiBoldCaps.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IntroSemiBoldItalic";
+  src: url("/static/css/fonts/Fontfabric-IntroSemiBoldItalic.otf") format("opentype");
 }
 
 :root {
@@ -28,7 +43,7 @@
 
 body {
   background-color: #003333;
-  font-family: Intro-cond;
+  font-family: 'IntroSemiBold';
 }
 
 .btn.btn-default {
@@ -56,7 +71,7 @@ body {
   color: #ffffff !important;
   font-size: 50px;
   font-weight: bold;
-  font-family: Intro-black;
+  font-family: 'IntroBold';
 }
 
 /* Bare de navigation */
@@ -83,7 +98,7 @@ body {
 
 /* Titres des blocs rectangulaire*/
 .title-spaced {
-  font-family: Intro-black;
+  font-family: 'IntroBoldAlt';
   font-weight: bold;
 }
 
