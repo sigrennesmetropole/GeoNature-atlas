@@ -1,14 +1,14 @@
     <footer class="footer">
         <p>
             <a href="{{url_for('main.index')}}">Accueil</a> |
-            <a href="http://www.ecrins-parcnational.fr" target="_blank">Site du {{configuration.STRUCTURE}}</a> |
+            <a href="https://metropole.rennes.fr/" target="_blank">Site de {{configuration.STRUCTURE}}</a> |
             <a data-toggle="modal" href="{{url_for('static', filename='custom/templates/credits.html') }}" data-target="#modalCredits">Conception et crédits</a> |
             <a data-toggle="modal" href="{{url_for('static', filename='custom/templates/mentions-legales.html') }}" data-target="#modalMentions">Mentions légales</a>
         <p>
 
         <div id="clear">
             <p class="text-muted">
-                {{configuration.NOM_APPLICATION}} - Atlas de la faune et de la flore du {{configuration.STRUCTURE}}, 2016
+                {{configuration.NOM_APPLICATION}} - Atlas de la faune et de la flore de {{configuration.STRUCTURE}}, 2021
                 <br/>
                 Réalisé avec <a href="https://github.com/PnX-SI/GeoNature-atlas" target="_blank">GeoNature-atlas</a>, développé par le <a href="http://www.ecrins-parcnational.fr" target="_blank">Parc national des Ecrins</a>
             </p>

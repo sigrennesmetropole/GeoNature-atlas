@@ -42,28 +42,32 @@
 				
               </ol>
               <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-image: url({{url_for('static', filename='custom/images/Faune_reduit.jpg') }}) ; background-size: cover; background-position: center center;">
+                <div class="item active" style="background-image: url({{url_for('static', filename='custom/images/presentation_thabor_titre.jpg') }}) ; background-size: cover; background-position: center center;">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1>Atlas de la faune vertébrée et invertébrée</h1>
-                      <p>Découvrez et apprenez à connaître la faune qui vous entour à travers les fiches espèces</p>
+						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;height:80%;">
+						  <h1>La biodiversité s'invite en ville</h1>
+					  </div>
 					  <p><a class="btn btn-lg btn-default" href="#faune" role="button">En savoir plus</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Flore_reduit.jpg') }}) ; background-size: cover; background-position: center center;">
+                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Thabor_titre.jpg') }}) ; background-size: cover; background-position: center center;">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1>Mieux connaître</h1>
-                      <p>pour mieux protéger</p>
+						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
+						   <h1>Mieux connaître pour mieux protéger</h1>
+						</div>
                       <p><a class="btn btn-lg btn-default" href="#connaitre" role="button">En savoir plus</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Recherches_reduit.jpg') }}) ; background-size: cover; background-position: top center;">
+                <div class="item" style="background-image: url({{url_for('static', filename='custom/images/presentation_stmartin_titre.jpg') }}) ; background-size: cover; background-position: top center;">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1>Participez à l'amélioration des connaissances !</h1>
+						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
+							<h1>Devenez enquêteur de la biodiversité !</h1>
+						</div>
                      <p><a class="btn btn-lg btn-default" href="#enquetes" role="button">En savoir plus</a></p>
                     </div>
                   </div>
@@ -71,9 +75,10 @@
                  <div class="item" style="background-image: url({{url_for('static', filename='custom/images/Photo_reduit.jpg') }}) ; background-size: cover; background-position: bottom center;">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1>Quelle biodiversité </h1>
-                      <p>près de chez vous ?</p>
-                      <p><a class="btn btn-lg btn-default" href="{{url_for('main.photos')}}" role="button">Visitez la galerie</a></p>
+						<div style="background-color:#ebe5b8;border-radius: 90px;color:black;padding-left :20px;padding-right :20px;display: inline-block;">
+							<h1>Quelle biodiversité près de chez vous ?</h1>
+						</div>
+                      <p><a class="btn btn-lg btn-default" href="#biodiversite" role="button">En savoir plus</a></p>
                     </div>
                   </div>
                 </div>
@@ -89,58 +94,31 @@
             </div><!-- /.carousel -->
 
 
-            <div class="container-presentation">
-              <div class="col-lg-8">
-                  <!-- Texte de présentation général -->
-
-                  <h2 id="general">RENNES, LA BIODIVERSITÉ S'INVITE EN VILLE !</h2>
-                  <p class="lead">
-                    Rennes possède sur son territoire des milieux naturels très riches et diversifiés. Parmi eux, le secteur de la Vilaine, qualifié de zones naturelles d'intérêt faunistique et floristique (ZNIEFF) où l'on retrouve de nombreuses espèces remarquables faisant de ce site le plus riche en matière de biodiversité.  
-                  </p>
-                  <p class="lead">
-                    Des milieux naturels d'intérêt écologique (MNIE) sont identifiés dans le secteur nord-est de la ville au niveau du parc des Gayeulles et des secteurs agro-naturels en continuités jusque la forêt de Rennes. 
-                  </p>
-				  <p class="lead">
-                    Mais la biodiversité s'invite également jusqu'au centre-ville comme cette poule d'eau au niveau des jardins flottants! Comment ? Au travers de la Vilaine, du canal d'Ille-et-Rance,  des espaces verts urbains, mais également au travers des jardins privés, vos jardins! 
-                  </p>
-                  
-              </div>
-              <div class="col-lg-4" style="margin-top:20px; padding: 20px; text-align:left;">
-                <p>
-                    <img class="img-circle" src="{{url_for('static', filename='custom/images/presentation_thabor.jpg') }}" alt="Generic placeholder image" width="280" height="280">
-                </p>
-          
-              </div>
-              <div style="clear: both;"></div>
+            <div class="container presentation" style="background-color : white;">
 
                         <!-- START THE FEATURETTES -->
 
               <hr class="featurette-divider">
-				<div class="featurette" id="connaitre">
-					<h2 id="general">QUELLE BIODIVERSITÉ PRÈS DE CHEZ VOUS ?</h2>
+				<div class="featurette" id="rennes">
+                    <img class="featurette-image img-circle img-responsive pull-right" style="border-radius: unset;" src="{{url_for('static', filename='custom/images/presentation_thabor.jpg') }}">
+                    <h2 class="featurette-heading">RENNES, LA BIODIVERSITÉ<br/><span class="text-muted">S'INVITE EN VILLE</span>
+                    </h2>
+                  <p class="lead">
+                    Rennes possède sur son territoire des milieux naturels très riches et diversifiés. Parmi eux, le secteur de la Vilaine, qualifié de zones naturelles d'intérêt faunistique et floristique (ZNIEFF) où l'on retrouve de nombreuses espèces remarquables faisant de ce site le plus riche en matière de biodiversité.  
+                  </p>
+                  <p class="lead">
+                     Des milieux naturels d'intérêt écologique (MNIE) sont identifiés dans le secteur nord-est de la ville au niveau du parc des Gayeulles et des secteurs agro-naturels en continuités jusque la forêt de Rennes. 
+                  </p>
+                   <p class="lead">
+                    Mais la biodiversité s'invite également jusqu'au centre-ville comme cette poule d'eau au niveau des jardins flottants! Comment ? Au travers de la Vilaine, du canal d'Ille-et-Rance,  des espaces verts urbains, mais également au travers des jardins privés, vos jardins! 
+                  </p>
                   
-					<p class="lead">
-						Biodiv'Rennes vous permet d'accéder à de nombreuses fiches espèces dans lesquelles vous retrouverez bon nombre d'informations comme leur répartition géographique connue ou encore des photos et descriptions pour mieux les connaitre (et les reconnaitre !)  
-					  </p>
-					<div class="col-lg-4" id="fonctionnalites">
-					  <img class="img-circle" src="{{url_for('static', filename='custom/images/mesangeCharb.jpg') }}" alt="Generic placeholder image" width="140" height="140">
-					  <h2>Fiches espèces</h2>
-					  <p>Retrouvez la fiche de chaque espèce avec leur carte des observations, leur répartition altitudinale et mensuelle, ainsi que des descriptions, photos, vidéos, audios et liens complémentaires</p>
-					  <p><a class="btn btn-default" href="espece/199425" role="button">Exemple &raquo;</a></p>
-					</div><!-- /.col-lg-4 -->
-					
-					<div class="col-lg-4">
-					  <img class="img-circle" src="{{url_for('static', filename='custom/images/machaon.jpg') }}" alt="Generic placeholder image" width="140" height="140">
-					  <h2>Galerie photos</h2>
-					  <p>Découvrez les photographies des différentes espèces, réalisées principalement par les agents du Parc national lors de leurs missions sur le terrain.</p>
-					  <p><a class="btn btn-default" href="{{url_for('main.photos')}}" role="button">Parcourir &raquo;</a></p>
-					</div><!-- /.col-lg-4 -->
-				</div>
-                
-                <!-- First Featurette -->
-                <div class="featurette" id="connaitre">
-                    <img class="featurette-image img-circle img-responsive pull-right" src="{{url_for('static', filename='custom/images/Thabor.jpg') }}">
-                    <h2 class="featurette-heading">Mieux connaître<br/><span class="text-muted">pour mieux protéger.</span>
+                </div>
+				
+				<hr class="featurette-divider">
+				<div class="featurette" id="connaitre">
+                    <img class="featurette-image img-circle img-responsive pull-left"  style="border-radius: unset;" src="{{url_for('static', filename='custom/images/Thabor.jpg') }}">
+                    <h2 class="featurette-heading">MIEUX CONNAÎTRE POUR<br/><span class="text-muted">MIEUX PROTÉGER.</span>
                     </h2>
                   <p class="lead">
                     Ce projet d'Atlas de la Biodiversité Communale est né du Conseil Local de la Biodiversité et s'intègre dans la Plan d'Action Biodiversité de la Ville de Rennes. 
@@ -153,22 +131,54 @@
                   </p>
                   
                 </div>
-
-
-              <hr class="featurette-divider">
+				
+				              <hr class="featurette-divider">
 
               <div class="featurette" id="enquetes">
-                  <img class="featurette-image img-circle img-responsive pull-left" src="{{url_for('static', filename='custom/images/presentation_stmartin.jpg') }}">
-                  <h2 class="featurette-heading">Devenez enquêteur de la biodiversité !<br/><span class="text-muted">Participez à l'amélioration de la connaissance.</span>
+                  <img class="featurette-image img-circle img-responsive pull-left"  style="border-radius: unset;" src="{{url_for('static', filename='custom/images/presentation_stmartin.jpg') }}">
+                  <h2 class="featurette-heading">PARTICIPEZ À L'AMÉLIORATION<br/><span class="text-muted">DES CONNAISSANCES !</span>
                   </h2>
                   <p class="lead">
                     Devenez enquêteur de la biodiversité en participant aux différentes enquêtes de Biodiv'Rennes! Cette plateforme vous permet de renseigner et vos observations sur les espèces recherchées du moment. N'hésitez pas à y participer !
                   </p>
                   <p class="lead">
-                    Pour en savoir plus : <a href="" target="_blank">http://www.enquetes-biodivrennes.fr</a>.
+                    <a href="N'hésitez pas à y participer !" target="_blank">http://www.enquetes-biodivrennes.fr</a>.
                   </p>
 
               </div>
+				
+			  <hr class="featurette-divider">
+				<div class="featurette" id="biodiversite">
+					<h2 id="general"> </h2>
+					<h2 class="featurette-heading">QUELLE BIODIVERSITÉ<br/><span class="text-muted">PRÊT DE CHEZ VOUS ?</span>
+					</h2>
+					<p class="lead">
+						Biodiv'Rennes vous permet d'accéder à de nombreuses fiches espèces dans lesquelles vous retrouverez bon nombre d'informations comme leur répartition géographique connue ou encore des photos et descriptions pour mieux les connaitre (et les reconnaitre !)  
+					  </p>
+					<div class="col-lg-4" id="fonctionnalites">
+					  <img class="img-circle" src="{{url_for('static', filename='custom/images/mesangeCharb.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+					  <h2>Fiches espèces</h2>
+					  <p>Retrouvez la fiche de chaque espèce avec leur carte des observations, leur répartition altitudinale et mensuelle, ainsi que des descriptions, photos, vidéos, audios et liens complémentaires</p>
+					  <p><a class="btn btn-default" href="/atlas/espece/61098" role="button">Exemple &raquo;</a></p>
+					</div><!-- /.col-lg-4 -->
+					
+					<div class="col-lg-4">
+					  <img class="img-circle" src="{{url_for('static', filename='custom/images/machaon.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+					  <h2>Galerie photos</h2>
+					  <p>Découvrez les photographies des différentes espèces, réalisées principalement par les agents du Parc national lors de leurs missions sur le terrain.</p>
+					  <p><a class="btn btn-default" href="{{url_for('main.photos')}}" role="button">Parcourir &raquo;</a></p>
+					</div><!-- /.col-lg-4 -->
+					
+					<div class="col-lg-4">
+					  <img class="img-circle" src="{{url_for('static', filename='custom/images/machaon.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+					  <h2>Fiches communes</h2>
+					  <p>Découvrez toutes les informations synthétisées sur la commune.</p>
+					  <p><a class="btn btn-default" href="/atlas/commune/35238" role="button">Exemple &raquo;</a></p>
+					</div><!-- /.col-lg-4 -->
+				</div>
+                
+                
+
 
               <!-- /END THE FEATURETTES -->
 
