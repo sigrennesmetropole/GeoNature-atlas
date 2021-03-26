@@ -305,7 +305,7 @@
                             {% else %}
                             <li class="active"><a data-toggle="tab" href="#communes"> <b>{{communes|length}}</b> {{ 'communes' if communes|length > 1 else 'commune' }}</a></li>
                             {% endif %}
-                            <li><a data-toggle="tab" href="#observateurs"> <b>{{observers|length}} </b> {{ 'observateurs' if observers|length > 1 else 'observateur' }}</a></li>
+                            <li><a data-toggle="tab" href="#avertissements"> <span class="glyphicon glyphicon-alert"> </span><b> information </b></a></li>
                           </ul>
 
                         <div class="tab-content" style="width:100%;">
@@ -368,13 +368,15 @@
                                 </p>
                             </div>
 
-                            <div id="observateurs" class="tab-pane fade">
-                                {% for o in observers %}
-                                    {{o }}
-                                    {% if  not loop.last %}
-                                    -
-                                    {% endif %}
-                                {% endfor %}
+                            
+							
+							<div id="avertissements" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="alert alert-warning text-justify"><b>Avertissement :</b> Les données visualisables reflètent l'état d'avancement des connaissances et/ou la disponibilité des données existantes : elles ne peuvent en aucun cas être considérées comme exhaustives.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                 </div>
