@@ -373,7 +373,7 @@
 							<div id="avertissements" class="tab-pane fade">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <p class="alert alert-warning text-justify"><b>Avertissement :</b> Les données visualisables reflètent l'état d'avancement des connaissances et/ou la disponibilité des données existantes : elles ne peuvent en aucun cas être considérées comme exhaustives.
+                                        <p class="alert alert-info text-justify"><b>Avertissement :</b> Les données visualisables reflètent l'état d'avancement des connaissances et/ou la disponibilité des données existantes : elles ne peuvent en aucun cas être considérées comme exhaustives.
                                         </p>
                                     </div>
                                 </div>
@@ -451,16 +451,18 @@
 
             <div class="panel panel-default" id="blocInfos">
 
-                <h4 class="title-bar center">
-					<strong>Informations sur l'espèce</strong>
-				</h4>
+                <div style="font-size:18px;padding-bottom : 10px">
+					<img src="/atlas/static/custom/images/label_noir.png" height="30px">
+					<span style="padding-left:10px"><strong>INFORMATIONS SUR L'ESPÈCE</strong></span>
+				</div>
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#description">Description</a></li>
                     {% if taxonDescription.commentaire != None %}
                     <li><a data-toggle="tab" href="#commentaire">En savoir plus</a></li>
                     {% endif %}
-                    <li><a data-toggle="tab" href="#milieu">Milieu</a></li>
-                    <li><a data-toggle="tab" href="#chorologie">Répartition</a></li>
+                    <!--<li><a data-toggle="tab" href="#milieu">Milieu</a></li> -->
+					<li><a data-toggle="tab" href="#protection">Statuts de protection</a></li>
+                    <!--<li><a data-toggle="tab" href="#chorologie">Répartition</a></li>-->
                     <li><a data-toggle="tab" href="#synonymes">Synonymes</a></li>
                 </ul>
 
@@ -468,6 +470,10 @@
                         <div id="description" class="tab-pane fade in active">
                                {% if taxonDescription.description == None %}
                                 Non renseignée pour le moment
+								<p><i>Autres sources d'informations sur l'espèce : </i></p>
+								<a  height="30" style="border:1px solid silver; padding: 7px 5px 7px 5px; border-radius:20px" href="https://inpn.mnhn.fr/espece/cd_nom/{{taxon.taxonSearch.cd_ref}}" role="button" target="_blank" data-toggle="tooltip" data-original-title="Fiche espèce INPN" data-placement="bottom">
+                                        <img height="19px" src="{{url_for('static', filename='images/logo_inpn.png') }}">
+                                    </a>
                                 {% else %}
                                 {{taxonDescription.description | safe }}
                                 {% endif %}
@@ -490,6 +496,11 @@
                                 {% else %}
                                     {{taxonDescription.chorologie}}
                                 {% endif %}
+                        </div>
+						<div id="protection" class="tab-pane fade">
+								<a  height="30" style="border:1px solid silver; padding: 7px 5px 7px 5px; border-radius:20px" href="https://inpn.mnhn.fr/espece/cd_nom/{{taxon.taxonSearch.cd_ref}}/tab/statut" role="button" target="_blank" data-toggle="tooltip" data-original-title="Statut INPN" data-placement="bottom">
+                                        <img height="19px" src="{{url_for('static', filename='images/logo_inpn.png') }}">
+                                    </a>
                         </div>
                         <div id="synonymes" class="tab-pane fade">
                             {% if synonyme | length == 1 %}

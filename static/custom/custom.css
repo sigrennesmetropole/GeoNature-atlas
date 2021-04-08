@@ -139,3 +139,27 @@ body {
   background-size: contain;
 }
 
+/*** structures d'onglet ***/
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	border-radius: 10px;
+	background-color: #003333;
+	color:#ffffff !important;
+}
+
+.nav-tabs > li > a {
+	background-color: #003333;
+	color:#ffffff !important;
+	border-radius: 10px;
+	margin-right: 20px;
+  
+}
+
+.nav-tabs {
+    border-bottom: 1px #ddd;
+}
+
+.nav > li > a {
+    padding: 4px 20px 2px 20px;
+}
