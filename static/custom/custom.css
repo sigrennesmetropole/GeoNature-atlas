@@ -76,7 +76,7 @@ body {
 
 /* Bare de navigation */
 .sidebar-nav {
-  background-color: #ffffff !important;
+  background-color: #f0f4f0 !important;
 }
 
 #sideBar {
@@ -90,11 +90,11 @@ body {
 
 /* Les blocs rectangulaire*/
 .panel-default{
-  background-color: #ffffff;
+  background-color: #f0f4f0 !important;
 }
 
 .panel-heading {
-  background-color: #ffffff !important;
+  background-color: #f0f4f0 !important;
 }
 
 /* Titres des blocs rectangulaire*/
@@ -118,19 +118,29 @@ body {
   font-size: 30px;
 }
 
+/* Les blocs de statistiques */
+.stat-thumbnail{
+  background-color: #f0f4f0;
+}
+
+
 .higlight {
   font-size: 30px;
 }
 
+.singleTaxon {
+    background-color: #f0f4f0;
+}
+
 .btn.btn-default.btn-espece{
-  background-color: #9b9e24 !important;
+  background-color: #dce169 !important;
   color: black ;
   border: none;
 }
 /**/
 
 .container-presentation {
-  background-color: #ffffff !important;
+  background-color: #f0f4f0 !important;
 }
 
 /*** images dans les listes ***/

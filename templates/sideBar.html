@@ -1,18 +1,27 @@
 <ul id="sidebar_menu" class="sidebar-nav">
   <a href="{{url_for('main.index')}}" id="menu-toggle" data-toggle="tooltip" data-original-title="Retour à l'accueil" data-placement="right">
-    <li class="sidebar-brand"><img src="/atlas/static/custom/images/label_noir.png" height="30px"></li>
-  </a>
+    <li class="sidebar-brand"><img src="/atlas/static/custom/images/pictos/home.png" height="30px"></li>
+  <!--</a>
   {% for page_key, page_values in configuration.STATIC_PAGES.items()|sort(attribute='1.order') %}
     <a href="{{url_for('main.get_staticpages', page=page_key)}}" data-toggle="tooltip"
       data-original-title="{{page_values.title}}" data-placement="right">
       <li class="sidebar-brand"><span class="glyphicon {{page_values.picto}}"></span></li>
     </a>
-  {% endfor %}
-
+  {% endfor %} -->
+<a href="{{url_for('main.get_staticpages', page='presentation')}}" data-toggle="tooltip" data-original-title="Présentation de l'atlas" data-placement="right">
+    <!--<li class="sidebar-brand"><span class="glyphicon glyphicon-camera"></span></li>-->
+    <li class="sidebar-brand"><img src="/atlas/static/custom/images/pictos/info.png" height="30px"></li>
+  </a>
+  <a href="{{url_for('main.get_staticpages', page='partenaires')}}" data-toggle="tooltip" data-original-title="Nos partenaires" data-placement="right">
+    <!--<li class="sidebar-brand"><span class="glyphicon glyphicon-camera"></span></li>-->
+    <li class="sidebar-brand"><img src="/atlas/static/custom/images/pictos/main.png" height="30px"></li>
+  </a>
+  
   <a href="{{url_for('main.photos')}}" data-toggle="tooltip" data-original-title="Galerie photos" data-placement="right">
-    <li class="sidebar-brand"><span class="glyphicon glyphicon-camera"></span></li>
+    <!--<li class="sidebar-brand"><span class="glyphicon glyphicon-camera"></span></li>-->
+    <li class="sidebar-brand"><img src="/atlas/static/custom/images/pictos/photo.png" height="30px"></li>
   </a>
   <a href="http://enquetes-biodivrennes.fr" target="_blank" data-toggle="tooltip" data-original-title="Enquetes BiodivRennes" data-placement="right">
-    <li class="sidebar-brand"><img src="/atlas/static/custom/images/label_noir.png" height="30px"></li>
+    <li class="sidebar-brand"><img src="/atlas/static/custom/images/pictos/jumelle.png" height="30px"></li>
   </a>
 </ul>
