@@ -3,7 +3,7 @@
 # Connexion de l'application à la BDD
 # Remplacer user, monpassachanger, IPADRESSE (localhost si la BDD est sur le même serveur que l'application), 
 # eventuellement le port de la BDD et le nom de la BDD avec l'utilisateur qui a des droits de lecture sur les vues de l'atlas (user_pg dans settings.ini)
-database_connection = "postgresql://geonatatlas:h6nHUh_7!P7M@localhost:63333/geonatureatlas"
+database_connection = "postgresql://monuserachanger:monpassachanger@monhostachanger:monportachanger/geonatureatlas"
 
 #################################
 #################################
